@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  line-height: 30px;
+  box-sizing: border-box;
+}
+.gradient {
+  width: 100%;
+  height: 140vh;
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#clock{
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.main-container {
+  padding: 25px;
+}
+
+.Heading-container {
+  background-color: #04aa6d;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* .Heading-container div{
+  margin-right: 30px;
+} */
+.Heading-container h1,
+p {
+  font-family: "Lucida Sans", Verdana, sans-serif;
+}
+#name{
+  color: #273a76;
+}
+
+#inner-Wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+#options {
+  width: 30%;
+}
+
+.listitem {
+  background-color: #f1f1f1;
+  border: 1px solid #d4d4d4;
+  list-style-type: none;
+  padding: 1px 12px 1px 2px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.listitem:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+#Co-Curricular{
+display: none;
+}
+#contacts{
+display: inline;
+}
+#education{
+  display: none;
+
+}
+#projects{
+  display: none;
+
+}
+#certification{
+  display: none;
+
+}
+#experience{
+  display: none;
+
+}
+#skills{
+  display: none;
+
+}
+#games{
+  display: none;
+
+}
+
+#Co-Curricular, #contacts, #education, #projects, #certification, #experience,#skills{
+  margin: 0 10px 10px;
+  padding: 0 10px 10px;
+  color: #ffffff;
+
+}
+
+#Co-Curricular h1, #contacts h1, #education h1, #projects h1, #certification h1,#skills h1,#experience h1{
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+#Co-Curricular h2, #contacts h2, #education h2, #projects h2, #certification h2,#experience h2{
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+
+#Co-Curricular p, #contacts p, #education p, #projects p, #certification p,#skills p #experience p{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+#sidebar {
+  /* background-color: #32a4e7; */
+  color: #ffffff;
+
+  width: 20%;
+  border-radius: 4px;
+  margin: 4px;
+}
+
+#sidebar h3 {
+  margin: 20px 0;
+}
+
+.footer-container {
+  border: 1px solid #d4d4d4;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 4px;
+}
+/* _---------------------------- */
+.contact-links {
+  font-size: 20px;
+  text-decoration: underline;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (min-width: 677px) and (max-width: 886px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #inner-Wrapper,
+  #sidebar {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #inner-Wrapper,
+  #sidebar {
+    width: 100%;
+  }
+
+  #inner-Wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #options {
+    width: 100%;
+  }
+}

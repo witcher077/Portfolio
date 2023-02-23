@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="gradient main-container">
+    <div class="Heading-container">
+      <div>
+        <h1>Welcome to My Profile 👩‍🔧</h1>
+        <p>An enthusiastic person with high optimism and leadership skills .</p>
+      </div>
+      <div>
+        <h1 id="name">ASHOK KUMAR MAHTO</h1>
+      </div>
+      <div id="clock">🕥
+        <span id="hour">00</span>
+        <span>:</span>
+        <span id="minut">00</span>
+        <span>:</span>
+        <span id="second">00</span>
+        <span id="session">AM</span>
+        <br>📅
+        <span id="day">00</span>
+        <span>:</span>
+        <span id="month">00</span>
+        <span>:</span>
+        <span id="year">00</span>
+
+      </div>
+
+    </div>
+    <!-- ------------------------ -->
+    <div class="content-container">
+      <div id="inner-Wrapper">
+        <div id="options">
+          <ul id="list">
+            <li class="listitem" onclick="contentChange('0')">contacts ☎️</li>
+            <li class="listitem" onclick="contentChange('1')">Experience ⛑️</li>
+            <li class="listitem" onclick="contentChange('2')">Education 📖</li>
+            <li class="listitem" onclick="contentChange('3')">project 🥇</li>
+            <li class="listitem" onclick="contentChange('4')">Skills 💻</li>
+            <li class="listitem" onclick="contentChange('5')">Internship and Certifications 💻</li>
+            <li class="listitem" onclick="contentChange('6')">Co-Curricular Activities 🏃</li>
+            <li class="listitem" onclick="contentChange('7')">Play games🎮</li>
+          </ul>
+
+        </div>
+        <!-- ----------------------U can Contact me Through---------------------------? -->
+        <div id="contacts">
+          <h1 style="color: rgb(27, 27,101)">U can Contact me Through</h1>
+          <h3>Mob 📞- 8210782716</h3>
+          <div style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                color: #ffffff;
+              ">
+            <a href="https://www.linkedin.com/in/ashok-kumar-mahto/" class="contact-links" target="_blank"><img
+                src="./img/linkedin.png" alt="linkedin" width="200" />linkedin</a>
+            <a href="https://github.com/witcher077" class="contact-links" target="_blank"><img src="./img/git.png"
+                alt="linkedin" width="200" />github</a>
+            <p class="contact-links">
+              ashokkumarmahto2000@gmail.com
+            </p>
+          </div>
+        </div>
+        <!-- ---------------------------------------------------------------------------------? -->
+
+        <!-- ----------------------------Work-experience------------------------------------------- -->
+        <div id="experience">
+          <h1>Work-experience</h1>
+          <h2>Epsilon India <img
+              src="data:image/png;base64,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"
+              width="100px"></h2>
+          <p>Frontend Software Engineer 1</p>
+          <p>👉 Email devlopment using HTML and CSS.</p>
+          <p>👉Website managment and changes in frontend part</p>
+          <p>👉webpage Styling using scss Authered by AEM</p>
+          <p> ⏲️june-2022 To present</p>
+        </div>
+        <!-- --------------------------------Education Qualification--------------------------------------- -->
+        <div id="education">
+          <h1>Education Qualification</h1>
+          <h2>Bachelor of Engineering</h2>
+          <h3>Birla Institute of technology Mesra</h3>
+          <p>👉 Mechanical Engineering </p>
+          <p>2021</p>
+          <hr>
+
+          <h2>Intermidiate</h2>
+          <h3>St. johns Inter college Ranchi</h3>
+          <p>2017</p>
+          <hr>
+
+          <h2>10th</h2>
+          <h3>St. Joseph's High school Kanke</h3>
+          <p>2015</p>
+
+        </div>
+
+
+        <!-- ------------------------ -->
+        <!-- ----------------------------Projects------------------------------------------- -->
+        <div id="projects">
+          <h1>Projects</h1>
+          <h2>1️⃣ Tic-tac-toe: using Reactjs <a href="https://quizzical-booth-eb3298.netlify.app/" target="_blank">🔗</a></h2>
+          <p>👉Shows the turn of the player at the top.</p>
+          <p>👉On winning it greets the winner and gives the buttun to play again. </p>
+          <hr>
+
+          <h2>2️⃣ Analog_clock Using Html, Css and Js.<a href="https://distracted-haibt-a8059d.netlify.app/" target="_blank">🔗</a></h2>
+          <p>👉Analog clock showing current time.</p>
+          <hr>
+
+          <h2>3️⃣ Password Generator Using Html, Css and Js.<a href="https://quirky-shockley-ad3b77.netlify.app/" target="_blank">🔗</a>
+          </h2>
+          <p>👉Password includes numbers , uppercase , lowercase and Symbols.</p>
+          <p>👉We can choose the length of password also we can copy the password to clipboard.</p>
+          <hr>
+          <h2>3️⃣ Google Home Page Using Html and Css| <a href="https://competent-albattani-abb3e3.netlify.app/" target="_blank">🔗</a></h2>
+          <p>👉This page includes Sign-in Button, Search bar, Gmail etc.</p>
+
+        </div>
+
+
+        <!-- ------------------------ -->
+        <!-- -------------skils---------------??z/ -->
+        <div id="skills">
+          <h1>Technical skills💻</h1>
+          <p>👉JAVA & DSA</p>
+          <p>👉 HTML</p>
+          <p>👉CSS & Sass</p>
+          <p>👉Javascript</p>
+          <p>👉Reactjs</p>
+          <p>👉Nodejs</p>
+          <p>👉Jquery</p>
+
+
+        </div>
+
+        <!-- ------------------------------------ -->
+        <!-- ----------------------------Internship and Certifications------------------------------------------- -->
+        <div id="certification">
+          <h1>Internship and Certifications 💻</h1>
+          <h2>SKYY RIDER INSTITUTIONS | Automobile Component Training</h2>
+          <p>👉Participated in summer internship training on AUTOMOBILE COMPONENTS OVERHAULING</p>
+          <p>👉Here we learnt about Ashok leyland heavy vehicals, Hyundai cars and Yamaha bikes.</p>
+          <p>👉We made a report on 15 days of training on AUTOMOBILE COMPONENTS OVERHAULING</p>
+          <hr>
+          <h2>Newton School | Newton School Coding Bootcamp Internship</h2>
+          <p>👉Full Stack Web Development along with Problem Solving</p>
+          <p>👉Technical Stack learnt: HTML, CSS, JavaScript, Java and React.</p>
+          <p>👉Participated in various coding contest organized by the platform.</p>
+          <p>👉Worked on various projects like To-Do, Google Home page , Password Generator.</p>
+        </div>
+
+        <!-- ------------------------ -->
+        <!-- ---------------------------------Co-Curricular Activities-------------------------------------- -->
+        <div id="Co-Curricular">
+          <h1>Co-Curricular Activities 🏃‍♂️</h1>
+          <h2>👉 Took part in the HYDROTECH competition and made a working model of JCB</h2>
+          <h2>👉 Represented Branch Football team in Annual Sport competitions.</h2>
+
+        </div>
+        <!-- ------------------------------------------------ -->
+        <!-- ---------------------------------Co-Curricular Activities-------------------------------------- -->
+        <div id="games">
+          <iframe src="https://quizzical-booth-eb3298.netlify.app/" height="600" width="800" style="border: 0;"></iframe>
+
+        </div>
+        <!-- ------------------------------------------------ -->
+      </div>
+      <div id="sidebar">
+        <img src="./img/img (1).jpg" alt="profile-img" width="100%" style="border-radius: 4px" />
+      </div>
+    </div>
+    <div class="footer-container">
+      Targeting an Internship or Entry-Level Opportunity in Software industry.
+      An enthusiastic person with high optimism and leadership skills pursuing
+      bachelors of engineering degree in Mechanical engineering.
+    </div>
+  </div>
+  </div>
+  <script>
+    function contentChange(n) {
+      console.log(n);
+
+      if (n == 0) {
+        document.getElementById('contacts').style.display = "block";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('education').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('certification').style.display = "none";
+        document.getElementById('Co-Curricular').style.display = "none";
+        document.getElementById('games').style.display = "none";
+
+      }
+      if (n == 1) {
+        document.getElementById('contacts').style.display = "none";
+        document.getElementById('experience').style.display = "block";
+        document.getElementById('education').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('certification').style.display = "none";
+        document.getElementById('Co-Curricular').style.display = "none";
+        document.getElementById('games').style.display = "none";
+
+      }
+      if (n == 2) {
+        document.getElementById('contacts').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('education').style.display = "block";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('certification').style.display = "none";
+        document.getElementById('Co-Curricular').style.display = "none";
+        document.getElementById('games').style.display = "none";
+
+      }
+      if (n == 3) {
+        document.getElementById('contacts').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('education').style.display = "none";
+        document.getElementById('projects').style.display = "block";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('certification').style.display = "none";
+        document.getElementById('Co-Curricular').style.display = "none";
+        document.getElementById('games').style.display = "none";
+
+      }
+      if (n == 4) {
+        document.getElementById('contacts').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('education').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "block";
+        document.getElementById('certification').style.display = "none";
+        document.getElementById('Co-Curricular').style.display = "none";
+        document.getElementById('games').style.display = "none";
+
+      }
+      if (n == 5) {
+        document.getElementById('contacts').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('education').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('certification').style.display = "block";
+        document.getElementById('Co-Curricular').style.display = "none";
+        document.getElementById('games').style.display = "none";
+
+      }
+      if (n == 6) {
+        document.getElementById('contacts').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('education').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('certification').style.display = "none";
+        document.getElementById('Co-Curricular').style.display = "block";
+        document.getElementById('games').style.display = "none";
+
+      }
+      if (n == 7) {
+        document.getElementById('contacts').style.display = "none";
+        document.getElementById('experience').style.display = "none";
+        document.getElementById('education').style.display = "none";
+        document.getElementById('projects').style.display = "none";
+        document.getElementById('skills').style.display = "none";
+        document.getElementById('certification').style.display = "none";
+        document.getElementById('Co-Curricular').style.display = "none";
+        document.getElementById('games').style.display = "block";
+
+      }
+
+    }
+    function Gettime() {
+      var newTime = new Date();
+      var hr = newTime.getHours();
+      var min = newTime.getMinutes();
+      var sec = newTime.getSeconds();
+      var session = document.getElementById('session');
+      var day = newTime.getDate();
+      var month = newTime.getMonth();
+      var year = newTime.getFullYear();
+      if (hr >= 12) {
+        session.innerHTML = "PM";
+      }
+      else {
+        session.innerHTML = "AM";
+      }
+      document.getElementById('hour').innerHTML = hr;
+      document.getElementById('minut').innerHTML = min;
+      document.getElementById('second').innerHTML = sec;
+      document.getElementById('day').innerHTML = day;
+      document.getElementById('month').innerHTML = month + 1;
+      document.getElementById('year').innerHTML = year;
+
+    }
+    setInterval(Gettime, 10);
+  </script>
+</body>
+
+</html>
