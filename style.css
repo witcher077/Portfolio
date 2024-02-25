@@ -300,10 +300,10 @@ p {
   text-decoration: underline;
   color: #ffffff;
   text-align: center;
-  transition:2s,transform,1.5s;
+  transition:1s,transform,1s;
 }
 .contact-links:hover{
-  transform: rotate(360deg);
+  scale:1.05;
 
 }
 .contact-div {
